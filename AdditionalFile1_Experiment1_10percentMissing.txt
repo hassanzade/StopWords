@@ -1,5 +1,5 @@
 %%% individual facts (properties of the objects) %%%
-hasIllness(p1,hepatitis).
+hasIllness(p1,hepatitis_B).
 age(p1,30).
 sex(p1,female).
 onMed(p1,interferonAlfa2).
@@ -15,7 +15,7 @@ bilirubin(p1,1.00).
 alk_phosphate(p1,85).
 albumin(p1,4.0).
 histology(p1,histology_neg).
-hasIllness(p2,hepatitis).
+hasIllness(p2,hepatitis_C).
 age(p2,50).
 sex(p2,male).
 onMed(p2,lamivudine).
@@ -29,7 +29,7 @@ varices(p2,varices_pos).
 bilirubin(p2,0.90).
 alk_phosphate(p2,135).
 sgot(p2,42).
-hasIllness(p3,hepatitis).
+hasIllness(p3,hepatitis_C).
 age(p3,78).
 sex(p3,male).
 onMed(p3,lamivudine).
@@ -46,7 +46,7 @@ alk_phosphate(p3,96).
 sgot(p3,32).
 albumin(p3,4.0).
 histology(p3,histology_neg).
-hasIllness(p4,hepatitis).
+hasIllness(p4,hepatitis_B).
 age(p4,31).
 sex(p4,male).
 fatigue(p4,fatigue_pos).
@@ -61,7 +61,7 @@ alk_phosphate(p4,46).
 sgot(p4,52).
 albumin(p4,4.0).
 protime(p4,80).
-hasIllness(p5,hepatitis).
+hasIllness(p5,hepatitis_C).
 sex(p5,male).
 onMed(p5,cortisone).
 onMed(p5,adefovir).
@@ -78,7 +78,7 @@ bilirubin(p5,1.00).
 sgot(p5,200).
 albumin(p5,4.0).
 histology(p5,histology_neg).
-hasIllness(p6,hepatitis).
+hasIllness(p6,hepatitis_C).
 age(p6,34).
 sex(p6,male).
 onMed(p6,prednisone).
@@ -96,7 +96,7 @@ sgot(p6,28).
 albumin(p6,4.0).
 protime(p6,75).
 histology(p6,histology_neg).
-hasIllness(p7,hepatitis).
+hasIllness(p7,hepatitis_C).
 age(p7,51).
 sex(p7,male).
 onMed(p7,interferonAlfa2).
@@ -108,7 +108,7 @@ spleen_palpable(p7,spleen_palpable_neg).
 ascites(p7,ascites_pos).
 varices(p7,varices_pos).
 histology(p7,histology_neg).
-hasIllness(p8,hepatitis).
+hasIllness(p8,hepatitis_B).
 age(p8,23).
 sex(p8,male).
 onMed(p8,dexamethasone).
@@ -122,7 +122,7 @@ spiders(p8,spiders_pos).
 ascites(p8,ascites_pos).
 bilirubin(p8,1.00).
 histology(p8,histology_neg).
-hasIllness(p9,hepatitis).
+hasIllness(p9,hepatitis_B).
 age(p9,39).
 sex(p9,male).
 onMed(p9,cortisone).
@@ -138,7 +138,7 @@ bilirubin(p9,0.70).
 sgot(p9,48).
 albumin(p9,4.4).
 histology(p9,histology_neg).
-hasIllness(p10,hepatitis).
+hasIllness(p10,hepatitis_C).
 age(p10,30).
 sex(p10,male).
 onMed(p10,dexamethasone).
@@ -153,7 +153,7 @@ bilirubin(p10,1.00).
 sgot(p10,120).
 albumin(p10,3.9).
 histology(p10,histology_neg).
-hasIllness(p11,hepatitis).
+hasIllness(p11,hepatitis_C).
 age(p11,39).
 sex(p11,male).
 fatigue(p11,fatigue_pos).
@@ -169,7 +169,7 @@ alk_phosphate(p11,78).
 sgot(p11,30).
 protime(p11,85).
 histology(p11,histology_neg).
-hasIllness(p12,hepatitis).
+hasIllness(p12,hepatitis_C).
 age(p12,32).
 onMed(p12,prednisone).
 fatigue(p12,fatigue_neg).
@@ -186,7 +186,7 @@ alk_phosphate(p12,59).
 sgot(p12,249).
 protime(p12,54).
 histology(p12,histology_neg).
-hasIllness(p13,hepatitis).
+hasIllness(p13,hepatitis_B).
 age(p13,41).
 sex(p13,male).
 onMed(p13,cortisone).
@@ -203,7 +203,7 @@ alk_phosphate(p13,81).
 albumin(p13,3.9).
 protime(p13,52).
 histology(p13,histology_neg).
-hasIllness(p14,hepatitis).
+hasIllness(p14,hepatitis_B).
 age(p14,30).
 sex(p14,male).
 onMed(p14,prednisone).
@@ -222,7 +222,7 @@ alk_phosphate(p14,57).
 sgot(p14,144).
 protime(p14,78).
 histology(p14,histology_neg).
-hasIllness(p15,hepatitis).
+hasIllness(p15,hepatitis_B).
 age(p15,47).
 sex(p15,male).
 fatigue(p15,fatigue_pos).
@@ -235,7 +235,7 @@ spiders(p15,spiders_pos).
 ascites(p15,ascites_pos).
 varices(p15,varices_pos).
 sgot(p15,60).
-hasIllness(p16,hepatitis).
+hasIllness(p16,hepatitis_B).
 age(p16,38).
 sex(p16,male).
 onMed(p16,lamivudine).
@@ -251,7 +251,7 @@ alk_phosphate(p16,72).
 albumin(p16,2.9).
 protime(p16,46).
 histology(p16,histology_neg).
-hasIllness(p17,hepatitis).
+hasIllness(p17,hepatitis_C).
 age(p17,66).
 sex(p17,male).
 onMed(p17,dexamethasone).
@@ -267,7 +267,7 @@ bilirubin(p17,1.20).
 sgot(p17,53).
 albumin(p17,4.3).
 histology(p17,histology_neg).
-hasIllness(p18,hepatitis).
+hasIllness(p18,hepatitis_C).
 age(p18,40).
 sex(p18,male).
 onMed(p18,adefovir).
@@ -285,7 +285,7 @@ sgot(p18,166).
 albumin(p18,4.0).
 protime(p18,63).
 histology(p18,histology_neg).
-hasIllness(p19,hepatitis).
+hasIllness(p19,hepatitis_C).
 age(p19,38).
 sex(p19,male).
 onMed(p19,cortisone).
@@ -304,7 +304,7 @@ sgot(p19,42).
 albumin(p19,4.1).
 protime(p19,85).
 histology(p19,histology_pos).
-hasIllness(p20,hepatitis).
+hasIllness(p20,hepatitis_C).
 age(p20,38).
 sex(p20,male).
 fatigue(p20,fatigue_pos).
@@ -321,7 +321,7 @@ sgot(p20,28).
 albumin(p20,4.2).
 protime(p20,62).
 histology(p20,histology_neg).
-hasIllness(p21,hepatitis).
+hasIllness(p21,hepatitis_C).
 age(p21,22).
 sex(p21,female).
 onMed(p21,cortisone).
@@ -339,7 +339,7 @@ sgot(p21,20).
 albumin(p21,4.2).
 protime(p21,64).
 histology(p21,histology_neg).
-hasIllness(p22,hepatitis).
+hasIllness(p22,hepatitis_B).
 age(p22,27).
 sex(p22,male).
 onMed(p22,cortisone).
@@ -357,7 +357,7 @@ sgot(p22,98).
 albumin(p22,4.1).
 protime(p22,39).
 histology(p22,histology_neg).
-hasIllness(p23,hepatitis).
+hasIllness(p23,hepatitis_B).
 age(p23,31).
 onMed(p23,dexamethasone).
 onMed(p23,interferonAlfa2).
@@ -373,7 +373,7 @@ alk_phosphate(p23,85).
 albumin(p23,4.0).
 protime(p23,100).
 histology(p23,histology_neg).
-hasIllness(p24,hepatitis).
+hasIllness(p24,hepatitis_C).
 age(p24,42).
 sex(p24,male).
 onMed(p24,interferonAlfa2).
@@ -390,7 +390,7 @@ alk_phosphate(p24,60).
 sgot(p24,63).
 protime(p24,47).
 histology(p24,histology_neg).
-hasIllness(p25,hepatitis).
+hasIllness(p25,hepatitis_C).
 age(p25,25).
 sex(p25,female).
 fatigue(p25,fatigue_pos).
@@ -406,7 +406,7 @@ sgot(p25,18).
 albumin(p25,4.3).
 protime(p25,70).
 histology(p25,histology_neg).
-hasIllness(p26,hepatitis).
+hasIllness(p26,hepatitis_B).
 age(p26,27).
 sex(p26,male).
 onMed(p26,adefovir).
@@ -423,7 +423,7 @@ alk_phosphate(p26,95).
 sgot(p26,46).
 albumin(p26,3.8).
 histology(p26,histology_neg).
-hasIllness(p27,hepatitis).
+hasIllness(p27,hepatitis_B).
 age(p27,49).
 sex(p27,male).
 fatigue(p27,fatigue_neg).
@@ -439,7 +439,7 @@ alk_phosphate(p27,85).
 sgot(p27,48).
 albumin(p27,3.7).
 histology(p27,histology_neg).
-hasIllness(p28,hepatitis).
+hasIllness(p28,hepatitis_B).
 age(p28,58).
 sex(p28,female).
 onMed(p28,lamivudine).
@@ -456,7 +456,7 @@ sgot(p28,55).
 albumin(p28,2.7).
 protime(p28,36).
 histology(p28,histology_neg).
-hasIllness(p29,hepatitis).
+hasIllness(p29,hepatitis_B).
 age(p29,61).
 sex(p29,male).
 malaise(p29,malaise_pos).
@@ -472,7 +472,7 @@ sgot(p29,25).
 albumin(p29,3.8).
 protime(p29,100).
 histology(p29,histology_neg).
-hasIllness(p30,hepatitis).
+hasIllness(p30,hepatitis_B).
 age(p30,51).
 sex(p30,male).
 fatigue(p30,fatigue_neg).
@@ -490,7 +490,7 @@ sgot(p30,58).
 albumin(p30,4.6).
 protime(p30,52).
 histology(p30,histology_neg).
-hasIllness(p31,hepatitis).
+hasIllness(p31,hepatitis_C).
 age(p31,39).
 sex(p31,male).
 fatigue(p31,fatigue_neg).
@@ -508,7 +508,7 @@ sgot(p31,98).
 albumin(p31,3.8).
 protime(p31,40).
 histology(p31,histology_neg).
-hasIllness(p32,hepatitis).
+hasIllness(p32,hepatitis_C).
 age(p32,62).
 sex(p32,male).
 malaise(p32,malaise_neg).
@@ -519,7 +519,7 @@ varices(p32,varices_pos).
 bilirubin(p32,1.00).
 sgot(p32,60).
 histology(p32,histology_neg).
-hasIllness(p33,hepatitis).
+hasIllness(p33,hepatitis_C).
 sex(p33,female).
 spleen_palpable(p33,spleen_palpable_pos).
 onMed(p33,interferonAlfa2).
@@ -538,7 +538,7 @@ sgot(p33,53).
 albumin(p33,5.0).
 protime(p33,74).
 histology(p33,histology_neg).
-hasIllness(p34,hepatitis).
+hasIllness(p34,hepatitis_B).
 age(p34,26).
 sex(p34,female).
 onMed(p34,lamivudine).
@@ -557,7 +557,7 @@ sgot(p34,29).
 albumin(p34,3.8).
 protime(p34,60).
 histology(p34,histology_neg).
-hasIllness(p35,hepatitis).
+hasIllness(p35,hepatitis_C).
 age(p35,35).
 sex(p35,male).
 onMed(p35,cortisone).
@@ -575,7 +575,7 @@ sgot(p35,92).
 albumin(p35,4.3).
 protime(p35,73).
 histology(p35,histology_neg).
-hasIllness(p36,hepatitis).
+hasIllness(p36,hepatitis_C).
 sex(p36,male).
 onMed(p36,cortisone).
 onMed(p36,interferonAlfa2).
@@ -592,7 +592,7 @@ alk_phosphate(p36,67).
 sgot(p36,28).
 albumin(p36,4.2).
 histology(p36,histology_neg).
-hasIllness(p37,hepatitis).
+hasIllness(p37,hepatitis_B).
 sex(p37,male).
 onMed(p37,prednisone).
 onMed(p37,lamivudine).
@@ -610,7 +610,7 @@ sgot(p37,150).
 albumin(p37,4.1).
 protime(p37,90).
 histology(p37,histology_neg).
-hasIllness(p38,hepatitis).
+hasIllness(p38,hepatitis_B).
 age(p38,20).
 sex(p38,female).
 fatigue(p38,fatigue_neg).
@@ -626,7 +626,7 @@ alk_phosphate(p38,150).
 sgot(p38,68).
 albumin(p38,3.9).
 histology(p38,histology_neg).
-hasIllness(p39,hepatitis).
+hasIllness(p39,hepatitis_C).
 age(p39,42).
 sex(p39,male).
 onMed(p39,adefovir).
@@ -644,7 +644,7 @@ alk_phosphate(p39,85).
 sgot(p39,14).
 albumin(p39,4.0).
 protime(p39,100).
-hasIllness(p40,hepatitis).
+hasIllness(p40,hepatitis_C).
 age(p40,65).
 sex(p40,male).
 onMed(p40,prednisone).
@@ -662,7 +662,7 @@ alk_phosphate(p40,180).
 albumin(p40,2.9).
 protime(p40,74).
 histology(p40,histology_pos).
-hasIllness(p41,hepatitis).
+hasIllness(p41,hepatitis_B).
 age(p41,52).
 sex(p41,male).
 fatigue(p41,fatigue_pos).
@@ -676,7 +676,7 @@ ascites(p41,ascites_pos).
 bilirubin(p41,0.70).
 sgot(p41,55).
 protime(p41,21).
-hasIllness(p42,hepatitis).
+hasIllness(p42,hepatitis_B).
 age(p42,23).
 sex(p42,male).
 fatigue(p42,fatigue_pos).
@@ -687,7 +687,7 @@ alk_phosphate(p42,56).
 sgot(p42,16).
 albumin(p42,4.6).
 histology(p42,histology_neg).
-hasIllness(p43,hepatitis).
+hasIllness(p43,hepatitis_B).
 age(p43,33).
 onMed(p43,prednisone).
 onMed(p43,interferonAlfa2).
@@ -704,7 +704,7 @@ alk_phosphate(p43,46).
 albumin(p43,4.4).
 protime(p43,60).
 histology(p43,histology_neg).
-hasIllness(p44,hepatitis).
+hasIllness(p44,hepatitis_C).
 age(p44,56).
 sex(p44,male).
 onMed(p44,lamivudine).
@@ -722,7 +722,7 @@ sgot(p44,18).
 albumin(p44,4.4).
 protime(p44,100).
 histology(p44,histology_neg).
-hasIllness(p45,hepatitis).
+hasIllness(p45,hepatitis_B).
 age(p45,34).
 sex(p45,male).
 onMed(p45,dexamethasone).
@@ -737,7 +737,7 @@ spiders(p45,spiders_pos).
 varices(p45,varices_pos).
 sgot(p45,86).
 histology(p45,histology_neg).
-hasIllness(p46,hepatitis).
+hasIllness(p46,hepatitis_B).
 sex(p46,male).
 onMed(p46,prednisone).
 fatigue(p46,fatigue_neg).
@@ -754,7 +754,7 @@ alk_phosphate(p46,74).
 sgot(p46,110).
 albumin(p46,4.4).
 histology(p46,histology_neg).
-hasIllness(p47,hepatitis).
+hasIllness(p47,hepatitis_C).
 sex(p47,male).
 onMed(p47,interferonAlfa2).
 fatigue(p47,fatigue_pos).
@@ -770,7 +770,7 @@ bilirubin(p47,0.60).
 sgot(p47,80).
 albumin(p47,3.8).
 histology(p47,histology_neg).
-hasIllness(p48,hepatitis).
+hasIllness(p48,hepatitis_C).
 age(p48,28).
 sex(p48,female).
 onMed(p48,cortisone).
@@ -790,7 +790,7 @@ sgot(p48,420).
 albumin(p48,3.3).
 protime(p48,46).
 histology(p48,histology_neg).
-hasIllness(p49,hepatitis).
+hasIllness(p49,hepatitis_B).
 age(p49,36).
 sex(p49,male).
 onMed(p49,interferonAlfa2).
@@ -809,7 +809,7 @@ sgot(p49,44).
 albumin(p49,4.2).
 protime(p49,85).
 histology(p49,histology_neg).
-hasIllness(p50,hepatitis).
+hasIllness(p50,hepatitis_B).
 age(p50,38).
 sex(p50,male).
 onMed(p50,dexamethasone).
@@ -827,7 +827,7 @@ sgot(p50,65).
 albumin(p50,4.2).
 protime(p50,77).
 histology(p50,histology_neg).
-hasIllness(p51,hepatitis).
+hasIllness(p51,hepatitis_C).
 age(p51,39).
 sex(p51,male).
 onMed(p51,lamivudine).
@@ -841,7 +841,7 @@ alk_phosphate(p51,85).
 sgot(p51,60).
 albumin(p51,4.0).
 histology(p51,histology_neg).
-hasIllness(p52,hepatitis).
+hasIllness(p52,hepatitis_C).
 age(p52,39).
 sex(p52,male).
 onMed(p52,dexamethasone).
@@ -857,7 +857,7 @@ ascites(p52,ascites_pos).
 bilirubin(p52,1.00).
 alk_phosphate(p52,85).
 sgot(p52,20).
-hasIllness(p53,hepatitis).
+hasIllness(p53,hepatitis_C).
 age(p53,44).
 onMed(p53,prednisone).
 onMed(p53,lamivudine).
@@ -873,7 +873,7 @@ bilirubin(p53,0.60).
 alk_phosphate(p53,110).
 sgot(p53,145).
 protime(p53,70).
-hasIllness(p54,hepatitis).
+hasIllness(p54,hepatitis_B).
 age(p54,40).
 sex(p54,male).
 onMed(p54,dexamethasone).
@@ -890,7 +890,7 @@ alk_phosphate(p54,85).
 sgot(p54,31).
 albumin(p54,4.0).
 protime(p54,100).
-hasIllness(p55,hepatitis).
+hasIllness(p55,hepatitis_B).
 age(p55,30).
 sex(p55,male).
 onMed(p55,prednisone).
@@ -909,7 +909,7 @@ sgot(p55,78).
 albumin(p55,4.2).
 protime(p55,74).
 histology(p55,histology_neg).
-hasIllness(p56,hepatitis).
+hasIllness(p56,hepatitis_B).
 age(p56,37).
 sex(p56,male).
 onMed(p56,interferonAlfa2).
@@ -925,12 +925,12 @@ bilirubin(p56,0.80).
 alk_phosphate(p56,92).
 sgot(p56,59).
 histology(p56,histology_neg).
-hasIllness(p57,hepatitis).
+hasIllness(p57,hepatitis_B).
 age(p57,34).
 sex(p57,male).
 onMed(p57,adefovir).
 histology(p57,histology_neg).
-hasIllness(p58,hepatitis).
+hasIllness(p58,hepatitis_B).
 age(p58,30).
 sex(p58,male).
 onMed(p58,cortisone).
@@ -946,7 +946,7 @@ bilirubin(p58,0.70).
 alk_phosphate(p58,52).
 protime(p58,52).
 histology(p58,histology_neg).
-hasIllness(p59,hepatitis).
+hasIllness(p59,hepatitis_B).
 age(p59,64).
 onMed(p59,dexamethasone).
 fatigue(p59,fatigue_neg).
@@ -964,7 +964,7 @@ sgot(p59,38).
 albumin(p59,4.3).
 protime(p59,74).
 histology(p59,histology_neg).
-hasIllness(p6,hepatitis).
+hasIllness(p6,hepatitis_C).
 age(p60,45).
 sex(p60,female).
 onMed(p60,adefovir).
@@ -979,7 +979,7 @@ bilirubin(p60,1.00).
 alk_phosphate(p60,85).
 sgot(p60,75).
 histology(p60,histology_neg).
-hasIllness(p61,hepatitis).
+hasIllness(p61,hepatitis_C).
 age(p61,37).
 sex(p61,male).
 onMed(p61,lamivudine).
@@ -996,7 +996,7 @@ alk_phosphate(p61,26).
 albumin(p61,4.5).
 protime(p61,100).
 histology(p61,histology_neg).
-hasIllness(p62,hepatitis).
+hasIllness(p62,hepatitis_C).
 age(p62,32).
 sex(p62,male).
 onMed(p62,prednisone).
@@ -1016,7 +1016,7 @@ sgot(p62,64).
 albumin(p62,4.0).
 protime(p62,90).
 histology(p62,histology_neg).
-hasIllness(p63,hepatitis).
+hasIllness(p63,hepatitis_B).
 age(p63,32).
 sex(p63,male).
 onMed(p63,cortisone).
@@ -1033,7 +1033,7 @@ sgot(p63,54).
 albumin(p63,3.4).
 protime(p63,29).
 histology(p63,histology_neg).
-hasIllness(p64,hepatitis).
+hasIllness(p64,hepatitis_B).
 age(p64,36).
 sex(p64,male).
 onMed(p64,interferonAlfa2).
@@ -1050,7 +1050,7 @@ alk_phosphate(p64,164).
 sgot(p64,44).
 protime(p64,41).
 histology(p64,histology_neg).
-hasIllness(p65,hepatitis).
+hasIllness(p65,hepatitis_C).
 age(p65,49).
 onMed(p65,dexamethasone).
 onMed(p65,interferonAlfa2).
@@ -1066,7 +1066,7 @@ alk_phosphate(p65,103).
 albumin(p65,3.5).
 protime(p65,66).
 histology(p65,histology_neg).
-hasIllness(p66,hepatitis).
+hasIllness(p66,hepatitis_C).
 age(p66,27).
 sex(p66,male).
 onMed(p66,dexamethasone).
@@ -1083,7 +1083,7 @@ bilirubin(p66,0.80).
 sgot(p66,38).
 albumin(p66,4.2).
 histology(p66,histology_neg).
-hasIllness(p67,hepatitis).
+hasIllness(p67,hepatitis_C).
 sex(p67,male).
 onMed(p67,interferonAlfa2).
 fatigue(p67,fatigue_pos).
@@ -1099,7 +1099,7 @@ bilirubin(p67,0.70).
 alk_phosphate(p67,62).
 sgot(p67,33).
 albumin(p67,3.0).
-hasIllness(p68,hepatitis).
+hasIllness(p68,hepatitis_B).
 age(p68,57).
 sex(p68,male).
 onMed(p68,dexamethasone).
@@ -1114,7 +1114,7 @@ varices(p68,varices_pos).
 bilirubin(p68,4.10).
 sgot(p68,48).
 protime(p68,73).
-hasIllness(p69,hepatitis).
+hasIllness(p69,hepatitis_C).
 age(p69,39).
 sex(p69,male).
 onMed(p69,cortisone).
@@ -1131,7 +1131,7 @@ alk_phosphate(p69,34).
 sgot(p69,15).
 protime(p69,54).
 histology(p69,histology_neg).
-hasIllness(p70,hepatitis).
+hasIllness(p70,hepatitis_C).
 age(p70,44).
 sex(p70,male).
 onMed(p70,adefovir).
@@ -1148,7 +1148,7 @@ bilirubin(p70,1.60).
 alk_phosphate(p70,68).
 albumin(p70,3.7).
 histology(p70,histology_neg).
-hasIllness(p71,hepatitis).
+hasIllness(p71,hepatitis_B).
 age(p71,24).
 sex(p71,male).
 onMed(p71,prednisone).
@@ -1167,7 +1167,7 @@ alk_phosphate(p71,82).
 sgot(p71,39).
 albumin(p71,4.3).
 histology(p71,histology_neg).
-hasIllness(p72,hepatitis).
+hasIllness(p72,hepatitis_B).
 age(p72,34).
 sex(p72,male).
 onMed(p72,adefovir).
@@ -1182,7 +1182,7 @@ ascites(p72,ascites_pos).
 varices(p72,varices_pos).
 alk_phosphate(p72,127).
 histology(p72,histology_neg).
-hasIllness(p73,hepatitis).
+hasIllness(p73,hepatitis_B).
 age(p73,51).
 sex(p73,male).
 onMed(p73,prednisone).
@@ -1195,7 +1195,7 @@ alk_phosphate(p73,76).
 sgot(p73,271).
 albumin(p73,4.4).
 histology(p73,histology_neg).
-hasIllness(p74,hepatitis).
+hasIllness(p74,hepatitis_C).
 sex(p74,male).
 onMed(p74,lamivudine).
 fatigue(p74,fatigue_neg).
@@ -1209,7 +1209,7 @@ bilirubin(p74,1.00).
 sgot(p74,45).
 protime(p74,57).
 histology(p74,histology_neg).
-hasIllness(p75,hepatitis).
+hasIllness(p75,hepatitis_C).
 age(p75,50).
 sex(p75,male).
 onMed(p75,prednisone).
@@ -1227,7 +1227,7 @@ alk_phosphate(p75,100).
 sgot(p75,100).
 albumin(p75,5.3).
 histology(p75,histology_neg).
-hasIllness(p76,hepatitis).
+hasIllness(p76,hepatitis_B).
 age(p76,32).
 sex(p76,male).
 fatigue(p76,fatigue_neg).
@@ -1243,7 +1243,7 @@ bilirubin(p76,1.00).
 sgot(p76,45).
 protime(p76,56).
 histology(p76,histology_neg).
-hasIllness(p77,hepatitis).
+hasIllness(p77,hepatitis_B).
 age(p77,58).
 sex(p77,male).
 onMed(p77,prednisone).
@@ -1260,7 +1260,7 @@ alk_phosphate(p77,167).
 sgot(p77,242).
 albumin(p77,3.3).
 histology(p77,histology_neg).
-hasIllness(p78,hepatitis).
+hasIllness(p78,hepatitis_C).
 age(p78,34).
 sex(p78,female).
 fatigue(p78,fatigue_pos).
@@ -1277,7 +1277,7 @@ sgot(p78,24).
 albumin(p78,4.0).
 protime(p78,76).
 histology(p78,histology_neg).
-hasIllness(p79,hepatitis).
+hasIllness(p79,hepatitis_C).
 age(p79,34).
 sex(p79,male).
 onMed(p79,adefovir).
@@ -1294,7 +1294,7 @@ alk_phosphate(p79,72).
 albumin(p79,4.4).
 protime(p79,57).
 histology(p79,histology_neg).
-hasIllness(p80,hepatitis).
+hasIllness(p80,hepatitis_C).
 age(p80,28).
 sex(p80,male).
 onMed(p80,dexamethasone).
@@ -1312,7 +1312,7 @@ alk_phosphate(p80,85).
 sgot(p80,31).
 albumin(p80,4.9).
 histology(p80,histology_neg).
-hasIllness(p81,hepatitis).
+hasIllness(p81,hepatitis_B).
 age(p81,23).
 sex(p81,male).
 onMed(p81,cortisone).
@@ -1327,7 +1327,7 @@ varices(p81,varices_pos).
 bilirubin(p81,0.80).
 sgot(p81,14).
 albumin(p81,4.8).
-hasIllness(p82,hepatitis).
+hasIllness(p82,hepatitis_B).
 age(p82,36).
 sex(p82,male).
 onMed(p82,dexamethasone).
@@ -1344,7 +1344,7 @@ bilirubin(p82,0.70).
 alk_phosphate(p82,62).
 albumin(p82,4.2).
 histology(p82,histology_neg).
-hasIllness(p83,hepatitis).
+hasIllness(p83,hepatitis_C).
 age(p83,30).
 sex(p83,male).
 onMed(p83,interferonAlfa2).
@@ -1362,7 +1362,7 @@ sgot(p83,31).
 albumin(p83,4.0).
 protime(p83,100).
 histology(p83,histology_neg).
-hasIllness(p84,hepatitis).
+hasIllness(p84,hepatitis_C).
 age(p84,67).
 sex(p84,female).
 fatigue(p84,fatigue_neg).
@@ -1373,7 +1373,7 @@ liver_firm(p84,liver_firm_pos).
 sgot(p84,69).
 albumin(p84,2.9).
 histology(p84,histology_neg).
-hasIllness(p85,hepatitis).
+hasIllness(p85,hepatitis_B).
 age(p85,62).
 sex(p85,female).
 onMed(p85,dexamethasone).
@@ -1392,7 +1392,7 @@ alk_phosphate(p85,141).
 sgot(p85,156).
 albumin(p85,3.9).
 protime(p85,58).
-hasIllness(p86,hepatitis).
+hasIllness(p86,hepatitis_B).
 age(p86,28).
 sex(p86,male).
 spleen_palpable(p86,spleen_palpable_pos).
@@ -1410,7 +1410,7 @@ sgot(p86,123).
 albumin(p86,4.0).
 protime(p86,46).
 histology(p86,histology_neg).
-hasIllness(p87,hepatitis).
+hasIllness(p87,hepatitis_C).
 age(p87,44).
 sex(p87,male).
 onMed(p87,interferonAlfa2).
@@ -1426,7 +1426,7 @@ alk_phosphate(p87,135).
 sgot(p87,55).
 protime(p87,41).
 histology(p87,histology_pos).
-hasIllness(p88,hepatitis).
+hasIllness(p88,hepatitis_C).
 age(p88,30).
 sex(p88,male).
 spleen_palpable(p88,spleen_palpable_pos).
@@ -1445,7 +1445,7 @@ alk_phosphate(p88,165).
 sgot(p88,64).
 albumin(p88,2.8).
 histology(p88,histology_pos).
-hasIllness(p89,hepatitis).
+hasIllness(p89,hepatitis_C).
 age(p89,38).
 sex(p89,male).
 onMed(p89,adefovir).
@@ -1462,7 +1462,7 @@ alk_phosphate(p89,118).
 sgot(p89,16).
 albumin(p89,2.8).
 histology(p89,histology_pos).
-hasIllness(p90,hepatitis).
+hasIllness(p90,hepatitis_C).
 age(p90,38).
 sex(p90,male).
 onMed(p90,lamivudine).
@@ -1478,7 +1478,7 @@ bilirubin(p90,0.60).
 alk_phosphate(p90,76).
 protime(p90,84).
 histology(p90,histology_pos).
-hasIllness(p91,hepatitis).
+hasIllness(p91,hepatitis_B).
 age(p91,50).
 onMed(p91,interferonAlfa2).
 fatigue(p91,fatigue_neg).
@@ -1496,7 +1496,7 @@ sgot(p91,117).
 albumin(p91,3.4).
 protime(p91,41).
 histology(p91,histology_pos).
-hasIllness(p92,hepatitis).
+hasIllness(p92,hepatitis_B).
 age(p92,42).
 sex(p92,male).
 onMed(p92,adefovir).
@@ -1511,7 +1511,7 @@ varices(p92,varices_neg).
 sgot(p92,55).
 albumin(p92,3.3).
 histology(p92,histology_pos).
-hasIllness(p93,hepatitis).
+hasIllness(p93,hepatitis_C).
 age(p93,33).
 sex(p93,male).
 onMed(p93,cortisone).
@@ -1527,7 +1527,7 @@ bilirubin(p93,1.00).
 sgot(p93,60).
 albumin(p93,4.0).
 histology(p93,histology_pos).
-hasIllness(p94,hepatitis).
+hasIllness(p94,hepatitis_C).
 age(p94,52).
 sex(p94,male).
 fatigue(p94,fatigue_pos).
@@ -1542,7 +1542,7 @@ bilirubin(p94,1.50).
 sgot(p94,69).
 albumin(p94,2.9).
 histology(p94,histology_pos).
-hasIllness(p95,hepatitis).
+hasIllness(p95,hepatitis_C).
 age(p95,59).
 sex(p95,male).
 onMed(p95,lamivudine).
@@ -1559,7 +1559,7 @@ alk_phosphate(p95,107).
 sgot(p95,157).
 albumin(p95,3.6).
 histology(p95,histology_pos).
-hasIllness(p96,hepatitis).
+hasIllness(p96,hepatitis_B).
 age(p96,40).
 sex(p96,male).
 fatigue(p96,fatigue_neg).
@@ -1576,7 +1576,7 @@ sgot(p96,69).
 albumin(p96,4.2).
 protime(p96,67).
 histology(p96,histology_pos).
-hasIllness(p97,hepatitis).
+hasIllness(p97,hepatitis_B).
 age(p97,30).
 sex(p97,male).
 onMed(p97,lamivudine).
@@ -1595,7 +1595,7 @@ sgot(p97,128).
 albumin(p97,3.9).
 protime(p97,100).
 histology(p97,histology_pos).
-hasIllness(p98,hepatitis).
+hasIllness(p98,hepatitis_C).
 age(p98,44).
 fatigue(p98,fatigue_neg).
 malaise(p98,malaise_neg).
@@ -1609,7 +1609,7 @@ bilirubin(p98,3.00).
 alk_phosphate(p98,114).
 sgot(p98,65).
 albumin(p98,3.5).
-hasIllness(p99,hepatitis).
+hasIllness(p99,hepatitis_C).
 age(p99,47).
 sex(p99,male).
 onMed(p99,dexamethasone).
@@ -1628,7 +1628,7 @@ alk_phosphate(p99,84).
 sgot(p99,23).
 albumin(p99,4.2).
 histology(p99,histology_pos).
-hasIllness(p100,hepatitis).
+hasIllness(p100,hepatitis_B).
 age(p100,60).
 sex(p100,male).
 onMed(p100,adefovir).
@@ -1643,7 +1643,7 @@ ascites(p100,ascites_pos).
 varices(p100,varices_pos).
 sgot(p100,40).
 histology(p100,histology_pos).
-hasIllness(p101,hepatitis).
+hasIllness(p101,hepatitis_B).
 age(p101,48).
 sex(p101,male).
 spleen_palpable(p101,spleen_palpable_pos).
@@ -1660,7 +1660,7 @@ sgot(p101,157).
 albumin(p101,2.7).
 protime(p101,31).
 histology(p101,histology_pos).
-hasIllness(p102,hepatitis).
+hasIllness(p102,hepatitis_C).
 age(p102,22).
 sex(p102,male).
 onMed(p102,dexamethasone).
@@ -1676,7 +1676,7 @@ varices(p102,varices_pos).
 bilirubin(p102,0.70).
 sgot(p102,24).
 histology(p102,histology_pos).
-hasIllness(p103,hepatitis).
+hasIllness(p103,hepatitis_C).
 age(p103,27).
 sex(p103,male).
 onMed(p103,interferonAlfa2).
@@ -1694,7 +1694,7 @@ alk_phosphate(p103,168).
 sgot(p103,227).
 albumin(p103,3.0).
 protime(p103,66).
-hasIllness(p104,hepatitis).
+hasIllness(p104,hepatitis_B).
 age(p104,51).
 sex(p104,male).
 onMed(p104,lamivudine).
@@ -1713,7 +1713,7 @@ sgot(p104,269).
 albumin(p104,3.9).
 protime(p104,51).
 histology(p104,histology_pos).
-hasIllness(p105,hepatitis).
+hasIllness(p105,hepatitis_B).
 age(p105,47).
 sex(p105,male).
 spleen_palpable(p105,spleen_palpable_pos).
@@ -1732,7 +1732,7 @@ alk_phosphate(p105,86).
 sgot(p105,20).
 albumin(p105,2.1).
 protime(p105,46).
-hasIllness(p106,hepatitis).
+hasIllness(p106,hepatitis_C).
 age(p106,25).
 sex(p106,male).
 spleen_palpable(p106,spleen_palpable_pos).
@@ -1748,7 +1748,7 @@ bilirubin(p106,0.60).
 sgot(p106,34).
 albumin(p106,6.4).
 histology(p106,histology_pos).
-hasIllness(p107,hepatitis).
+hasIllness(p107,hepatitis_C).
 age(p107,35).
 sex(p107,male).
 onMed(p107,interferonAlfa2).
@@ -1764,7 +1764,7 @@ alk_phosphate(p107,138).
 sgot(p107,58).
 albumin(p107,2.6).
 histology(p107,histology_pos).
-hasIllness(p108,hepatitis).
+hasIllness(p108,hepatitis_B).
 age(p108,45).
 sex(p108,male).
 fatigue(p108,fatigue_neg).
@@ -1776,7 +1776,7 @@ spiders(p108,spiders_pos).
 varices(p108,varices_pos).
 sgot(p108,648).
 histology(p108,histology_pos).
-hasIllness(p109,hepatitis).
+hasIllness(p109,hepatitis_B).
 age(p109,54).
 sex(p109,male).
 fatigue(p109,fatigue_pos).
@@ -1794,7 +1794,7 @@ sgot(p109,225).
 albumin(p109,3.6).
 protime(p109,67).
 histology(p109,histology_pos).
-hasIllness(p110,hepatitis).
+hasIllness(p110,hepatitis_C).
 sex(p110,male).
 onMed(p110,interferonAlfa2).
 malaise(p110,malaise_neg).
@@ -1809,7 +1809,7 @@ alk_phosphate(p110,63).
 sgot(p110,80).
 albumin(p110,3.0).
 histology(p110,histology_pos).
-hasIllness(p111,hepatitis).
+hasIllness(p111,hepatitis_C).
 age(p111,7).
 sex(p111,male).
 onMed(p111,prednisone).
@@ -1827,7 +1827,7 @@ alk_phosphate(p111,256).
 sgot(p111,25).
 albumin(p111,4.2).
 histology(p111,histology_pos).
-hasIllness(p112,hepatitis).
+hasIllness(p112,hepatitis_C).
 age(p112,42).
 sex(p112,male).
 fatigue(p112,fatigue_neg).
@@ -1845,7 +1845,7 @@ sgot(p112,68).
 albumin(p112,3.8).
 protime(p112,29).
 histology(p112,histology_pos).
-hasIllness(p113,hepatitis).
+hasIllness(p113,hepatitis_C).
 age(p113,52).
 sex(p113,male).
 onMed(p113,lamivudine).
@@ -1863,7 +1863,7 @@ alk_phosphate(p113,85).
 sgot(p113,30).
 albumin(p113,4.0).
 histology(p113,histology_pos).
-hasIllness(p114,hepatitis).
+hasIllness(p114,hepatitis_B).
 age(p114,45).
 sex(p114,male).
 onMed(p114,lamivudine).
@@ -1880,7 +1880,7 @@ bilirubin(p114,1.20).
 sgot(p114,65).
 albumin(p114,3.0).
 histology(p114,histology_neg).
-hasIllness(p115,hepatitis).
+hasIllness(p115,hepatitis_B).
 age(p115,36).
 sex(p115,male).
 onMed(p115,interferonAlfa2).
@@ -1897,7 +1897,7 @@ bilirubin(p115,1.10).
 alk_phosphate(p115,141).
 sgot(p115,75).
 histology(p115,histology_pos).
-hasIllness(p116,hepatitis).
+hasIllness(p116,hepatitis_B).
 age(p116,69).
 sex(p116,female).
 spleen_palpable(p116,spleen_palpable_pos).
@@ -1912,7 +1912,7 @@ alk_phosphate(p116,119).
 sgot(p116,136).
 histology(p116,histology_pos).
 spiders(p116,spiders_pos).
-hasIllness(p117,hepatitis).
+hasIllness(p117,hepatitis_B).
 age(p117,24).
 sex(p117,male).
 onMed(p117,interferonAlfa2).
@@ -1925,7 +1925,7 @@ varices(p117,varices_pos).
 bilirubin(p117,1.00).
 albumin(p117,4.1).
 histology(p117,histology_pos).
-hasIllness(p118,hepatitis).
+hasIllness(p118,hepatitis_B).
 sex(p118,male).
 onMed(p118,prednisone).
 onMed(p118,adefovir).
@@ -1944,7 +1944,7 @@ sgot(p118,81).
 albumin(p118,3.9).
 protime(p118,62).
 histology(p118,histology_pos).
-hasIllness(p119,hepatitis).
+hasIllness(p119,hepatitis_B).
 sex(p119,male).
 onMed(p119,adefovir).
 fatigue(p119,fatigue_neg).
@@ -1954,7 +1954,7 @@ spleen_palpable(p119,spleen_palpable_pos).
 spiders(p119,spiders_neg).
 varices(p119,varices_pos).
 histology(p119,histology_pos).
-hasIllness(p120,hepatitis).
+hasIllness(p120,hepatitis_B).
 age(p120,54).
 sex(p120,male).
 onMed(p120,prednisone).
@@ -1973,7 +1973,7 @@ alk_phosphate(p120,85).
 sgot(p120,28).
 albumin(p120,3.8).
 histology(p120,histology_pos).
-hasIllness(p121,hepatitis).
+hasIllness(p121,hepatitis_C).
 age(p121,56).
 sex(p121,male).
 onMed(p121,lamivudine).
@@ -1991,7 +1991,7 @@ alk_phosphate(p121,90).
 sgot(p121,153).
 albumin(p121,4.0).
 histology(p121,histology_pos).
-hasIllness(p122,hepatitis).
+hasIllness(p122,hepatitis_C).
 age(p122,20).
 sex(p122,male).
 spleen_palpable(p122,spleen_palpable_pos).
@@ -2009,7 +2009,7 @@ sgot(p122,118).
 albumin(p122,2.9).
 protime(p122,23).
 histology(p122,histology_pos).
-hasIllness(p123,hepatitis).
+hasIllness(p123,hepatitis_B).
 age(p123,42).
 sex(p123,male).
 onMed(p123,dexamethasone).
@@ -2026,7 +2026,7 @@ varices(p123,varices_pos).
 bilirubin(p123,1.50).
 sgot(p123,40).
 histology(p123,histology_pos).
-hasIllness(p124,hepatitis).
+hasIllness(p124,hepatitis_B).
 age(p124,37).
 sex(p124,male).
 onMed(p124,adefovir).
@@ -2041,7 +2041,7 @@ bilirubin(p124,0.90).
 sgot(p124,231).
 albumin(p124,4.3).
 histology(p124,histology_pos).
-hasIllness(p125,hepatitis).
+hasIllness(p125,hepatitis_C).
 age(p125,50).
 sex(p125,male).
 onMed(p125,cortisone).
@@ -2060,7 +2060,7 @@ sgot(p125,75).
 albumin(p125,4.0).
 protime(p125,72).
 histology(p125,histology_pos).
-hasIllness(p126,hepatitis).
+hasIllness(p126,hepatitis_B).
 age(p126,34).
 sex(p126,female).
 onMed(p126,cortisone).
@@ -2079,7 +2079,7 @@ sgot(p126,24).
 albumin(p126,4.1).
 protime(p126,100).
 histology(p126,histology_pos).
-hasIllness(p127,hepatitis).
+hasIllness(p127,hepatitis_B).
 age(p127,28).
 sex(p127,male).
 onMed(p127,prednisone).
@@ -2094,7 +2094,7 @@ bilirubin(p127,1.00).
 sgot(p127,20).
 albumin(p127,4.0).
 histology(p127,histology_pos).
-hasIllness(p128,hepatitis).
+hasIllness(p128,hepatitis_C).
 age(p128,50).
 sex(p128,male).
 onMed(p128,dexamethasone).
@@ -2112,7 +2112,7 @@ bilirubin(p128,2.80).
 sgot(p128,75).
 albumin(p128,2.4).
 protime(p128,32).
-hasIllness(p129,hepatitis).
+hasIllness(p129,hepatitis_B).
 age(p129,54).
 onMed(p129,adefovir).
 fatigue(p129,fatigue_neg).
@@ -2129,7 +2129,7 @@ sgot(p129,92).
 albumin(p129,3.1).
 protime(p129,66).
 histology(p129,histology_pos).
-hasIllness(p130,hepatitis).
+hasIllness(p130,hepatitis_B).
 age(p130,57).
 sex(p130,male).
 onMed(p130,lamivudine).
@@ -2148,7 +2148,7 @@ sgot(p130,55).
 albumin(p130,3.3).
 protime(p130,30).
 histology(p130,histology_pos).
-hasIllness(p131,hepatitis).
+hasIllness(p131,hepatitis_C).
 age(p131,54).
 sex(p131,male).
 onMed(p131,dexamethasone).
@@ -2168,7 +2168,7 @@ sgot(p131,30).
 albumin(p131,4.5).
 protime(p131,0).
 histology(p131,histology_pos).
-hasIllness(p132,hepatitis).
+hasIllness(p132,hepatitis_B).
 age(p132,31).
 onMed(p132,adefovir).
 fatigue(p132,fatigue_neg).
@@ -2183,7 +2183,7 @@ bilirubin(p132,8.00).
 sgot(p132,101).
 albumin(p132,2.2).
 histology(p132,histology_pos).
-hasIllness(p133,hepatitis).
+hasIllness(p133,hepatitis_B).
 age(p133,48).
 sex(p133,male).
 onMed(p133,cortisone).
@@ -2200,7 +2200,7 @@ bilirubin(p133,2.00).
 sgot(p133,278).
 albumin(p133,3.8).
 histology(p133,histology_pos).
-hasIllness(p134,hepatitis).
+hasIllness(p134,hepatitis_C).
 age(p134,72).
 sex(p134,male).
 onMed(p134,prednisone).
@@ -2218,7 +2218,7 @@ sgot(p134,52).
 albumin(p134,3.4).
 protime(p134,50).
 histology(p134,histology_pos).
-hasIllness(p135,hepatitis).
+hasIllness(p135,hepatitis_C).
 age(p135,38).
 sex(p135,male).
 onMed(p135,adefovir).
@@ -2235,7 +2235,7 @@ sgot(p135,49).
 albumin(p135,3.8).
 protime(p135,90).
 histology(p135,histology_pos).
-hasIllness(p136,hepatitis).
+hasIllness(p136,hepatitis_C).
 age(p136,25).
 sex(p136,male).
 onMed(p136,cortisone).
@@ -2255,7 +2255,7 @@ sgot(p136,181).
 albumin(p136,4.5).
 protime(p136,57).
 histology(p136,histology_pos).
-hasIllness(p137,hepatitis).
+hasIllness(p137,hepatitis_C).
 age(p137,51).
 sex(p137,male).
 onMed(p137,prednisone).
@@ -2271,7 +2271,7 @@ varices(p137,varices_pos).
 sgot(p137,33).
 albumin(p137,4.5).
 histology(p137,histology_pos).
-hasIllness(p138,hepatitis).
+hasIllness(p138,hepatitis_B).
 age(p138,38).
 sex(p138,male).
 fatigue(p138,fatigue_pos).
@@ -2289,7 +2289,7 @@ sgot(p138,140).
 albumin(p138,3.5).
 protime(p138,56).
 histology(p138,histology_pos).
-hasIllness(p139,hepatitis).
+hasIllness(p139,hepatitis_B).
 age(p139,47).
 sex(p139,male).
 onMed(p139,prednisone).
@@ -2309,7 +2309,7 @@ sgot(p139,30).
 albumin(p139,2.6).
 protime(p139,31).
 histology(p139,histology_pos).
-hasIllness(p140,hepatitis).
+hasIllness(p140,hepatitis_B).
 age(p140,45).
 sex(p140,male).
 onMed(p140,cortisone).
@@ -2327,7 +2327,7 @@ alk_phosphate(p140,85).
 sgot(p140,44).
 protime(p140,85).
 histology(p140,histology_pos).
-hasIllness(p141,hepatitis).
+hasIllness(p141,hepatitis_B).
 age(p141,36).
 sex(p141,male).
 spleen_palpable(p141,spleen_palpable_pos).
@@ -2344,7 +2344,7 @@ alk_phosphate(p141,295).
 sgot(p141,60).
 albumin(p141,2.7).
 histology(p141,histology_pos).
-hasIllness(p142,hepatitis).
+hasIllness(p142,hepatitis_B).
 age(p142,54).
 sex(p142,male).
 onMed(p142,interferonAlfa2).
@@ -2358,7 +2358,7 @@ bilirubin(p142,3.90).
 alk_phosphate(p142,120).
 albumin(p142,3.5).
 histology(p142,histology_pos).
-hasIllness(p143,hepatitis).
+hasIllness(p143,hepatitis_B).
 age(p143,51).
 sex(p143,male).
 onMed(p143,dexamethasone).
@@ -2374,7 +2374,7 @@ bilirubin(p143,1.00).
 sgot(p143,20).
 albumin(p143,3.0).
 histology(p143,histology_pos).
-hasIllness(p144,hepatitis).
+hasIllness(p144,hepatitis_C).
 age(p144,49).
 sex(p144,male).
 onMed(p144,adefovir).
@@ -2391,7 +2391,7 @@ sgot(p144,70).
 albumin(p144,3.5).
 protime(p144,35).
 histology(p144,histology_pos).
-hasIllness(p145,hepatitis).
+hasIllness(p145,hepatitis_C).
 sex(p145,male).
 onMed(p145,dexamethasone).
 onMed(p145,interferonAlfa2).
@@ -2405,7 +2405,7 @@ ascites(p145,ascites_neg).
 varices(p145,varices_pos).
 sgot(p145,114).
 histology(p145,histology_pos).
-hasIllness(p146,hepatitis).
+hasIllness(p146,hepatitis_B).
 age(p146,31).
 sex(p146,male).
 onMed(p146,interferonAlfa2).
@@ -2422,7 +2422,7 @@ alk_phosphate(p146,75).
 albumin(p146,4.2).
 protime(p146,54).
 histology(p146,histology_pos).
-hasIllness(p147,hepatitis).
+hasIllness(p147,hepatitis_B).
 age(p147,41).
 onMed(p147,prednisone).
 onMed(p147,lamivudine).
@@ -2439,7 +2439,7 @@ alk_phosphate(p147,65).
 sgot(p147,120).
 albumin(p147,3.4).
 histology(p147,histology_pos).
-hasIllness(p148,hepatitis).
+hasIllness(p148,hepatitis_C).
 age(p148,70).
 sex(p148,male).
 onMed(p148,lamivudine).
@@ -2452,7 +2452,7 @@ sgot(p148,528).
 albumin(p148,2.8).
 protime(p148,35).
 histology(p148,histology_pos).
-hasIllness(p149,hepatitis).
+hasIllness(p149,hepatitis_B).
 age(p149,20).
 sex(p149,male).
 spleen_palpable(p149,spleen_palpable_pos).
@@ -2467,7 +2467,7 @@ bilirubin(p149,0.90).
 alk_phosphate(p149,89).
 sgot(p149,152).
 histology(p149,histology_pos).
-hasIllness(p150,hepatitis).
+hasIllness(p150,hepatitis_B).
 age(p150,36).
 sex(p150,male).
 onMed(p150,cortisone).
@@ -2485,7 +2485,7 @@ bilirubin(p150,0.60).
 alk_phosphate(p150,120).
 albumin(p150,4.0).
 histology(p150,histology_pos).
-hasIllness(p151,hepatitis).
+hasIllness(p151,hepatitis_C).
 sex(p151,male).
 onMed(p151,prednisone).
 onMed(p151,adefovir).
@@ -2502,7 +2502,7 @@ sgot(p151,242).
 albumin(p151,3.3).
 protime(p151,50).
 histology(p151,histology_pos).
-hasIllness(p152,hepatitis).
+hasIllness(p152,hepatitis_C).
 age(p152,44).
 sex(p152,male).
 onMed(p152,dexamethasone).
@@ -2520,7 +2520,7 @@ alk_phosphate(p152,126).
 sgot(p152,142).
 albumin(p152,4.3).
 histology(p152,histology_pos).
-hasIllness(p153,hepatitis).
+hasIllness(p153,hepatitis_C).
 age(p153,61).
 sex(p153,male).
 onMed(p153,lamivudine).
@@ -2537,7 +2537,7 @@ alk_phosphate(p153,75).
 sgot(p153,20).
 albumin(p153,4.1).
 histology(p153,histology_pos).
-hasIllness(p154,hepatitis).
+hasIllness(p154,hepatitis_B).
 age(p154,53).
 sex(p154,female).
 spleen_palpable(p154,spleen_palpable_pos).
@@ -2554,7 +2554,7 @@ alk_phosphate(p154,81).
 sgot(p154,19).
 protime(p154,48).
 histology(p154,histology_pos).
-hasIllness(p155,hepatitis).
+hasIllness(p155,hepatitis_C).
 age(p155,43).
 sex(p155,male).
 onMed(p155,cortisone).
