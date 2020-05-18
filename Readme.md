@@ -47,11 +47,11 @@ As the response, you will receive a JSON object formatted as:
 
 """
 
-import pandas as pd\n
-import numpy as np\n
-import matplotlib.pyplot as plt\n
+import pandas as pd<br />
+import numpy as np<br/>
+import matplotlib.pyplot as plt<br/>
 
-from sklearn.feature_extraction.text import TfidfVectorizer\n
+from sklearn.feature_extraction.text import TfidfVectorizer<br/>
 from sklearn.naive_bayes import MultinomialNB\n
 from sklearn.svm import SVC\n
 from sklearn.linear_model import SGDClassifier\n
