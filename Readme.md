@@ -55,11 +55,17 @@ from sklearn.feature_extraction.text import TfidfVectorizer<br/>
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.svm import SVC\n
 from sklearn.linear_model import SGDClassifier\n
+
 from sklearn.neural_network import MLPClassifier\n
+
 from sklearn.model_selection import GridSearchCV\n
+
 from sklearn.ensemble import RandomForestClassifier\n
+
 from sklearn.feature_selection import chi2, SelectKBest\n
+
 from sklearn.pipeline import Pipeline\n
+
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix\n
 
 # Section 2 of 3
