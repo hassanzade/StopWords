@@ -32,22 +32,20 @@ The whole exercice should not take more than a couple of hours - we don't need t
 
 
 
-# Section 1 of 3
-## Model Deployment 
-The trained model is now live and accessible over the web. The model is deployed as a
-REST API using Flask RESTful
+## 1. Model Deployment 
+The trained model is now live and accessible over the web. The model is deployed as a REST API using Flask RESTful
 
-To access the web application and query the trained model, please format your input data as the 
-link below and submitt it through http:
+To access the web application and query the trained model, please format your input data as the link below and submitt it through http:
 
-curl -X GET http://hosseinmhz.pythonanywhere.com/ -d title="title here" -d content="content here" -d answer="and answer here"
+* curl -X GET http://hosseinmhz.pythonanywhere.com/ -d title="title here" -d content="content here" -d answer="and answer here"
 
 As the response, you will receive a JSON object formatted as:
 {"Prediction": "Class ID", "Category": "Class Label"}
 
+* The code that restores pickled the model and TFIDF vectorizer, receive the arguments from the user and perfoms the predcition can be find at the end of the this document.
 
-# Section 2 of 3
-## Data preparation, data analysis and prepresoosing and model training
+
+# 2. Data preparation and prepresoosing, and model training
 
 ### packages used
 import pandas as pd  
@@ -88,10 +86,12 @@ testset['title_answer'] = testset['title'] + testset['answer']
 * There are different approaches for feature extraction in NLP. But based on my experience  
 * TFIDF should work just as fine as others (such as countvectorizer) """
 
-tfidf_vectorizer = TfidfVectorizer(max_df = 0.5, min_df = 10, stop_words = "english",  
-                            lowercase = True, ngram_range = (1,2), # considering both 1 grams and 2 grams  
-                            max_features = 5000, # it will keep top 5000 terms based on their term frequency  
-                            token_pattern= u'(?ui)\\b\\w*[a-z]+\\w*\\b') # ignore the terms that includes only number  
+ 
+tfidf_vectorizer = TfidfVectorizer(max_df = 0.5, min_df = 10, stop_words = "english", lowercase = True, ngram_range = (1,2), max_features = 5000, token_pattern= u'(?ui)\\b\\w*[a-z]+\\w*\\b')  
+#considering both 1 grams and 2 grams  
+#it will keep top 5000 terms based on their term frequency  
+#ignore the terms that includes only number 
+
 train_tfidf_vec = tfidf_vectorizer.fit_transform(trainset['title_answer'])  
 train_features = tfidf_vectorizer.get_feature_names()  
 
@@ -102,10 +102,10 @@ test_features = tfidf_vectorizer.get_feature_names()
 ## Step 2: Exploring 4 classifiers 
 * To get insight of the trainability of the data and choose the best model  
 
-# SVM
+## SVM
 classification(SGDClassifier(), train_tfidf_vec, trainset['label'], test_tfidf_vec, testset['label'])  
 
-# NaiveBayes
+## NaiveBayes
 classification(MultinomialNB(alpha = 0.01, fit_prior = True), train_tfidf_vec, trainset['label'], test_tfidf_vec, testset['label'])
 
 //test on single text  
@@ -114,10 +114,10 @@ model = MultinomialNB()
 model.fit(train_tfidf_vec, trainset['label'])  
 model.predict(test_x)  
 
-# Random Forest
+## Random Forest
 classification(RandomForestClassifier(max_depth=10, random_state=0), train_tfidf_vec, trainset['label'], test_tfidf_vec, testset['label'])  
 
-# NN
+## NN
 model_NN = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(5,), random_state=1, activation = 'relu', max_iter=50)    
 classification(model_NN, train_tfidf_vec, trainset['label'], test_tfidf_vec, testset['label'])  
 
@@ -135,6 +135,7 @@ So, I decided to continue the analysis with NB
 ## Step 3: Continue feature engineering - Dimensionality reduction
 * I am going to use chi2 score to find the most relevant terms that help boost the classifer  
 * Generate the TFIDF matrix again, this time with all the phrases inlcuded  
+
 tfidf_vectorizer = TfidfVectorizer(max_df = 0.5, min_df = 10, stop_words = "english", lowercase = True, ngram_range = (1,2), token_pattern= u'(?ui)\\b\\w*[a-z]+\\w*\\b')  
 train_tfidf_vec = tfidf_vectorizer.fit_transform(trainset['title_answer'])  
 train_features = tfidf_vectorizer.get_feature_names()  
@@ -144,6 +145,7 @@ test_features = tfidf_vectorizer.get_feature_names()
 
 ## Sensitivity analysis: 
 * Trying k = 5000, 10000, 25000, 50000, and 160000 (based on chi2 cutoff threshold - statistical signficance)  
+
 ch2_selection = SelectKBest(chi2, k=25000)  
 train_chi2_selected = ch2_selection.fit_transform(train_tfidf_vec, trainset['label'])  
 test_chi2_selected = ch2_selection.transform(test_tfidf_vec)  
@@ -151,9 +153,7 @@ classification(MultinomialNB(), train_chi2_selected, trainset['label'], test_chi
 
 ### Result
 * k = 25,000 is gives us the best results:   
-only 1% decrease in accuracy and 2% decrease in f1, comparing with the model that  
-includes total dataset with 637006 terms (features)  
-compared with other models, NB is still the best  
+only 1% decrease in accuracy and 2% decrease in f1, comparing with the model that includes total dataset with 637006 terms (features) compared with other models, NB is still the best  
 
 
 ## Step 4: hyperparameters tuning
@@ -170,14 +170,16 @@ model_hp_tuning.best_score_ # best score is 69%
 for param_name in sorted(parameters.keys()):  
     print("%s: %r" % (param_name, model_hp_tuning.best_params_[param_name]))  
 
-* best parameters are: clf__alpha: 0.01, and clf__fit_prior: True  
+### Result:
+* Best parameters are: clf__alpha: 0.01, and clf__fit_prior: True  
 
 ## Final configuration
-Data:   
+### Data:   
 * input = title + answer  
 * TFIDF = with 2 grams  
 * TFIDF_vector = top 25,000 terms based on chi2 score  
-Classifier:  
+
+### Classifier:
 * MultinomialNB(alpha = 0.01, fit_prior = True)  
 
 
@@ -199,8 +201,7 @@ def performance_metrics(actual, prediction):
     accuracy = accuracy_score(actual, prediction)  
     precision = precision_score(actual, prediction, average = 'macro') #Since the data is well-balances I use Macro to calculate the mean of performance metrics  
     recall = recall_score(actual, prediction, average = 'macro')  
-    f1 = f1_score(actual, prediction, average = 'macro')  
-    # I conider accuracy and f1 to measure the performance.    
+    f1 = f1_score(actual, prediction, average = 'macro') #I conider accuracy and f1 to measure the performance.    
     return accuracy, f1   
 
 * To run a classifier model with the passing arguemnts (data input for train and test)   
@@ -225,3 +226,65 @@ plt.barh(x,top_train_tfidf_chi2[1], align='center', alpha=0.2)
 plt.plot(top_train_tfidf_chi2[1], x, '-o', markersize=5, alpha=0.8)  
 plt.yticks(x, labels)  
 plt.xlabel('$\chi^2$')  
+
+## Model deployement - Web application
+from flask import Flask  
+from flask_restful import reqparse, abort, Api, Resource  
+import pickle  
+import numpy as np  
+from model import QACLFModel  
+import codecs, json  
+
+app = Flask(__name__)  
+api = Api(app)  
+
+#@app.route("/", methods = ["GET", "POST"])  
+
+model = QACLFModel()  
+classes = ["Society & Culture", "Science & Mathematics", "Health", "Education & Reference", "Computers & Internet", "Sports", "Business & Finance", "Entertainment & Music", "Family & Relationships", "Politics & Government"]  
+
+vec_path = 'lib/TFIDFVectorizer.pkl'  
+with open(vec_path, 'rb') as f:  
+    model.tfidf_vectorizer = pickle.load(f)  
+
+clf_path = 'lib/QAClassifier.pkl'  
+with open(clf_path, 'rb') as f:  
+    model.model = pickle.load(f)  
+
+#argument parsing  
+parser = reqparse.RequestParser()  
+parser.add_argument('title')  
+parser.add_argument('content')  
+parser.add_argument('answer')  
+
+
+class QAClassifier(Resource):  
+    def get(self):  
+        #use parser and find the user's query  
+        args = parser.parse_args()  
+        doc_title = args['title']  
+        doc_content = args['content']  
+        doc_answer = args['answer']  
+        doc_text = str(doc_title) + " " + str(doc_answer)  
+        print("input is: ", doc_text)  
+        # vectorize the user's query and make a prediction  
+       
+        uq_vectorized = model.vectorizer_transform([doc_text])
+        
+        prediction = model.predict(uq_vectorized)
+        
+        #create JSON object  
+        #output = {'prediction': prediction,}  
+        pred_class_no = str(prediction[0])  
+        pred_class_title = str(classes[prediction[0]-1])  
+        print("The input belongs to categry:", classes[prediction[0]-1], " (Label[", prediction[0], "])")    
+        output = {'Prediction': pred_class_no, 'Category': pred_class_title, }  
+        return output  
+
+
+#Setup the Api resource routing here  
+#Route the URL to the resource  
+api.add_resource(QAClassifier, '/')  
+
+if __name__ == '__main__':  
+    app.run(debug=False)  
