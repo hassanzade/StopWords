@@ -67,15 +67,15 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 """ ***** Data preparation, data analysis and prepresoosing and model training  *****"""
 
 ### Step 0: Data preparation 
-columns_header = ["label", "title", "content", "answer"] # column names for the dataframe
-trainset = pd.read_csv("./yahoo_answers_csv/train.csv", header = None)
-trainset.columns = columns_header #setting the columns names
-testset = pd.read_csv("./yahoo_answers_csv/test.csv", header = None)
-testset.columns = columns_header #setting the columns names
+columns_header = ["label", "title", "content", "answer"] # column names for the dataframe  
+trainset = pd.read_csv("./yahoo_answers_csv/train.csv", header = None)  
+trainset.columns = columns_header #setting the columns names  
+testset = pd.read_csv("./yahoo_answers_csv/test.csv", header = None)  
+testset.columns = columns_header #setting the columns names  
 
 ### Removing the rows with missing values in the column Answer
-trainset = trainset[trainset['answer'].notna()]
-testset = testset[testset['answer'].notna()]
+trainset = trainset[trainset['answer'].notna()]  
+testset = testset[testset['answer'].notna()]  
 
 ### Creating a new column (feature) by combining two filed: Title and Answer
 """ I am curious to see if combination of the two fileds leads to a better performance of the model """
