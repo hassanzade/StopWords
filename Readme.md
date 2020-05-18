@@ -52,7 +52,7 @@ import numpy as np<br/>
 import matplotlib.pyplot as plt<br/>
 
 from sklearn.feature_extraction.text import TfidfVectorizer<br/>
-from sklearn.naive_bayes import MultinomialNB\n
+from sklearn.naive_bayes import MultinomialNB
 from sklearn.svm import SVC\n
 from sklearn.linear_model import SGDClassifier\n
 from sklearn.neural_network import MLPClassifier\n
